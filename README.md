@@ -1,21 +1,21 @@
 # HODL de Bitcoin seguro
 
-##1.- Introducción
-##2.- Requisitos
-##3.- Descargas necesarias
-  ##3.1.- Wallet generator
-  ##3.2.- Linux TAILS
-##4.- Instalacion Linux TAILS
-  ##4.1.- Pendrive 1 OFFLINE
-  ##4.2.- Pendrive 2 ONLINE
-##5.- Funcionamiento de cartera
-  ##5.1.- Generar cartera
-  ##5.2.- Cartera privada
-  ##5.3.- Cartera sólo lectura
-  ##5.4.- Recibir fondos
-  ##5.5.- Enviar fondos
+## 1.- Introducción
+## 2.- Requisitos
+## 3.- Descargas necesarias
+  ## 3.1.- Wallet generator
+  ## 3.2.- Linux TAILS
+## 4.- Instalacion Linux TAILS
+  ## 4.1.- Pendrive 1 OFFLINE
+  ## 4.2.- Pendrive 2 ONLINE
+## 5.- Funcionamiento de cartera
+  ## 5.1.- Generar cartera
+  ## 5.2.- Cartera privada
+  ## 5.3.- Cartera sólo lectura
+  ## 5.4.- Recibir fondos
+  ## 5.5.- Enviar fondos
 
-##1.- Introducción
+## 1.- Introducción
   El objeto de esta guía es explicar la manera de custodiar tus Bitcoins de la manera más segura y barata, utilizando un almacenamiento en frío y firmando las transacciones utilizando un PC seguro y desconectado de la red. Para consultar la cartera, utilizaremos el PC conectado a la red. Es un tutorial orientado a quienes ahorran Bitcoins a largo plazo, habitualmente ingresan bitcoins en la wallet, y sólo esporádicamente necesitan sacarlos de la wallet.
   
   Una cartera con Bitcoins consta de dos claves Maestras: la clave Pública y la clave Privada. La clave Pública permite sólo-lectura de los fondos de la cartera, mientras que la clave Privada permite acceder dichos fondos y transferirlos. Conociendo la clave Privada, se puede conocer la clave Pública, pero nunca al revés. Por todo esto, la clave Privada debe custodiarse de manera muy segura, mientras que con la Pública podemos ser un poco menos precavidos ya que si alguien la obtuviera, podría ver cuáles son nuestros fondos, pero nunca obtenerlos.
