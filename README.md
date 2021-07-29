@@ -12,6 +12,8 @@
   5.1.- Generar cartera
   5.2.- Cartera privada
   5.3.- Cartera sólo lectura
+  5.4.- Recibir fondos
+  5.5.- Enviar fondos
 
 1.- Introducción
   El objeto de esta guía es explicar la manera de custodiar tus Bitcoins de la manera más segura y barata, utilizando un almacenamiento en frío y firmando las transacciones utilizando un PC seguro y desconectado de la red. Para consultar la cartera, utilizaremos el PC conectado a la red. Es un tutorial orientado a quienes ahorran Bitcoins a largo plazo, habitualmente ingresan bitcoins en la wallet, y sólo esporádicamente necesitan sacarlos de la wallet.
@@ -63,17 +65,33 @@ Utilizaremos el almacenamiento persistente encriptado en cada uno de los TAILS. 
 5.- Funcionamiento de cartera
   El primer paso es generar la wallet. Obtendremos una semilla de tipo HD BIP39, la cual nos servirá en el futuro para otros software de wallet. Debemos anotarla en papel y guardarla bien, haciendo varias copias de seguridad en lugares diferentes. Si se pierde la semilla, perderemos todo. Si alguien obtiene nuestra semilla, podrá robarnos nuestros fondos. Generaremos una contraseña (passphrase) para complementar la semilla, la cual es IMPRESCINDIBLE para recuperar la cartera, no sirve sólo con la semilla. Podemos anotarla junto a la semilla o en un lugar diferente para mayor seguridad, memorizarla, etc.
   El segundo paso es cargar la wallet con la semilla en el "Pendrive 1 OFFLINE", donde generaremos tanto la clave privada como la pública. Este pendrive sólo lo arrancaremos offline cuando necesitemos realizar envíos de bitcoin mediante la clave privada.
-  El tercer paso es cargar la wallet sólo lectura en "Pendrive 2 ONLINE". Para ello copiaremos la Clave Pública Maestra desde la wallet de "Pendrive 1 OFFLINE", y desde este pendrive sólo podremos hacer ingresos. Este pendrive se conectará a la Internet para comprobar el estado de fondos de la cartera, pero al haber cargado sólo la Clave Pública Maestra (y no la Privada), no corremos el riesgo de que puedan quitarnos nuestros fondos aunque se viera comprometida. Es por ello que puede cargarse sin problemas en otras carteras para Windows o Android, sin riesgo que nos quiten los fondos (pero sí de perder nuestra privacidad y que puedan ver cuántos fondos tenemos).
+  El tercer paso es cargar la wallet sólo lectura en "Pendrive 2 ONLINE". Para ello copiaremos la Clave Pública Maestra desde la wallet de "Pendrive 1 OFFLINE", y desde este pendrive sólo podremos hacer ingresos. Este pendrive se conectará a la Internet para comprobar el estado de fondos de la cartera, pero al haber cargado sólo la Clave Pública Maestra (y no la Privada), no corremos el riesgo de que puedan quitarnos nuestros fondos aunque se viera comprometida. Es por ello que la Clave Pública Maestra puede cargarse sin problemas en otras carteras para Windows o Android, sin riesgo que nos quiten los fondos (pero sí de perder nuestra privacidad y que puedan ver cuántos fondos tenemos).
   
 
   5.1.- Generar cartera
-    Arrancamos el PC con el "Pendrive 1 OFFLINE". Conectamos el "Pendrive 3" y desde el explorador de ficheros, accedemos a la carpeta que hemos descomprimido de "Source Code.zip", carpeta "bip39" y abrimos "index.html". Click en "Generate New Mnemonic" y con 24 palabras, movemos el raton en el recuadro para generar aleatoriedad. Anotamos en un papel las 24 palabras, es importante el orden y que nadie más pueda verlas. NO HACER FOTOGRAFIAS O GUARDARLAS EN NINGÚN MEDIO DIGITAL, SÓLO EN PAPEL. Cerramos el navegador.
+    Arrancamos el PC con el "Pendrive 1 OFFLINE". Conectamos el "Pendrive 3" y desde el explorador de ficheros, accedemos a la carpeta que hemos descomprimido de "Source Code.zip", entramos a la carpeta "bip39" y abrimos "index.html". Click en "Generate New Mnemonic" y 24 palabras, movemos el raton en el recuadro para generar aleatoriedad. Anotamos en un papel las 24 palabras, es importante el orden y que nadie más pueda verlas. NO HACER FOTOGRAFIAS O GUARDARLAS EN NINGÚN MEDIO DIGITAL, SÓLO EN PAPEL. Cerramos el navegador.
     
-  5.2.- Cartera privada
-  
+  5.2.- Cartera privada para firmar
+    Desde el PC arrancado con "Pendrive 1 OFFLINE", abrimos Electrum desde el menú. En nombre de cartera ponemos lo que queramos (por ejemplo "MiCartera1"), seleccionamos "Standard Wallet" y despues "I already have a seed". Introducimos las 24 palabras una detrás de otra, dejando un espacio entre cada una. En "Options", marcamos "BIP39" y "Extend this seed with custom words". Deberá indicar el estado "checksum: OK". En la siguiente ventana, introducimos una passpharase que queramos (tambien llamada palabra 25), ESTA PALABRA ES NECESARIA PARA RECUPERAR LA CARTERA. En la siguiente ventana, dejamos seleccionado "native segwit (p2wpkh)". Introducimos una contraseña para acceder al fichero de la wallet (IMPORTANTE, esto no es la passphrase de recuperación, sino una contraseña para acceder al fichero de la cartera desde Electrum). 
   
   5.3.- Cartera sólo lectura
-
+  Con la cartera privada cargada desde "Pendrive 1 OFFLINE", vamos al menú "Wallet/Information" y copiamos la Master Public Key en un fichero de texto en "Pendrive 3". Apagamos el sistema, quitamos el "Pendrive 1 OFFLINE" y conectamos "Pendrive 2 ONLINE", y encendemos el PC. Abrimos Electrum, en nombre de cartera usamos la misma que anteriormente (por ejemplo "MiCartera1"), elegimos "Standard Wallet" y despues "Use Public or Private keys". Pegamos aqui la Master Public Key que hemos guardado en "Pendrive 3", y en la siguiente ventana pegamos la contraseña que hemos usado para la cartera privada (NO LA PASSPHRASE). A continuación se conectará a la red y nos indicará que ha sincronizado, mostrando 0 bitcoins de fondo. Ya tenemos nuestra cartera de sólo lectura.
+  Este mismo paso 5.3 puede hacerse en otros PC con Windows o en la aplicación de Android (puede leerse el QR en lugar de copiar la clave a mano), para poder consultar (sólo consultar) nuestra cartera desde cualquier sitio.
+  
+  
+  5.4.- Recibir fondos
+    Para recibir fondos, arrancamos "Pendrive 2 ONLINE", abrimos ELectrum y desde la pestaña "Receive", indicamos una "Description" para identificar la transacción en el futuro y le damos a "New Address". Ya podemos indicar esa dirección a quien sea para que nos envíen bitcoin. 
+    Es IMPORTANTE, por privacidad, no reutilizar nunca esa dirección para más pagos, aunque sea el mismo pagador. Para cada transacción nueva a recibir, debemos generar una nueva dirección cada vez.
+    Todo este proceso podemos hacerlo desde la cartera de sólo lectura en Windows, Android etc...
+  
+  5.5.- Enviar fondos
+    Para enviar fondos, nos vamos al menú "Send", escribimos la dirección de envío que nos hayan indicado, una "Description" para identificar el concepto en el futuro y la cantidad de bitcoin a enviar. Le damos a "Pay", elegimos cuanto queremos pagar por la transacción (cada bloque son unos 10 minutos, pagamos según la prisa) y le damos a "Send". Lo que vemos es la transacción, pero como indica arriba, sin firmar aún ("Unsigned"). Hacemos click en "Export" y "Export to file", y lo guardamos en el "Pendrive 3".
+    Arrancamos el PC con "Pendrive 1 OFFLINE", abrimos Electrum, click en "Tools/Load transaction/From file...", conectamos "Pendrive 3" y cargamos el fichero. Este es el momento más crítico, nos aseguramos bien que toda la información de dirección de origen, destino y cantidad de bitcoin son correctas, y clicamos en "Sign". El estado de la transacción en la parte de arriba ha cambiado a "Signed". Le damos de nuevo a "Export/Export to file" y guardamos la transacción, ya firmada, en el "Pendrive 3".
+    Arrancamos de nuevo "Pendrive 2 ONLINE", abrimos Electrum y desde "Tools/Load transaction/From file..." cargamos el fichero de la transacción firmada. Clicamos en "Broadcast" para enviarla a la red, y ya estaría en proceso.
+    
+    
+    
+  
 
 
 
