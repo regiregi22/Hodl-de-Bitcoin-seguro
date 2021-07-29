@@ -1,7 +1,7 @@
 # HODL de Bitcoin seguro
 
 ## 1.- Introducción
-## 2.- Requisitos
+##          2.- Requisitos
 ## 3.- Descargas necesarias
   ## 3.1.- Wallet generator
   ## 3.2.- Linux TAILS
