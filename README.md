@@ -38,7 +38,8 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
       - "Pendrive 1 OFFLINE"
         - "Wallet Pendrive 1 OFFLINE"
       - "Pendrive 2 ONLINE"
-        - "Wallet Pendrive 2 ONLINE"
+        - "Wallet Pendrive 2 ONLINE"  
+  * - (OPCIONAL) 2x Webcams. Puede evitarse utilizar el pendrive para firmar la transacción si se utilizan 2 PCs, cada uno con una webcam, y se transfiere mediante QR.      
     
   
 ## 3-. Descargas necesarias
