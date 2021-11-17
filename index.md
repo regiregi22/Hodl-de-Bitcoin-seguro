@@ -40,7 +40,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
       - "Pendrive 1 OFFLINE"
       - "Cartera Pendrive 1 OFFLINE"
       - "Pendrive 2 ONLINE"
-      - "Cartera Pendrive 2 ONLINE"  
+      - "Cartera Pendrive 2 ONLINE"
   * -(OPCIONAL) 2x Webcams y 2x PCs. Método más seguro. Puede evitarse utilizar el "Pendrive 3" para transferir la transacción entre PCs si se utilizan 2 PCs, cada uno con una webcam, y se transfiere mediante lector QR.      
     
 ## 3-. Descargas necesarias
