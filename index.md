@@ -1,6 +1,8 @@
 # HODL de Bitcoin seguro (v1.2)
 
 * 1.- Introducción
+  * 1.1.- Objetivo de la guía
+  * 1.2.- Recomendaciones extra
 * 2.- Requisitos
 * 3.- Descargas necesarias
   * 3.1.- Generador de cartera
@@ -17,6 +19,7 @@
   * 5.6.- Confirmar fondos (Opcional)
 
 ## 1.- Introducción
+### 1.1.- Objetivo de la guía
   - El objeto de esta guía es explicar la manera de custodiar tus bitcoins de la manera más segura y barata, utilizando un **almacenamiento frío (cold storage)** y **separado por aire (airgapped)**, firmando las transacciones utilizando un PC securizado y desconectado de la red. Para consultar la cartera, utilizaremos el PC conectado a la red. Es un tutorial orientado a quienes custodian Bitcoin a largo plazo, habitualmente ingresan bitcoins en la cartera, y sólo esporádicamente necesitan enviarlos. Si vas a hacer muchos envíos de bitcoins a menudo, existen otras soluciones comerciales más cómodas, como Coldcard MK3.
   
   - Una cartera Bitcoin consta de dos Claves Maestras: la **Clave Pública Maestra** y la **Clave Privada Maestra**. La Clave Pública Maestra permite sólo-lectura de los fondos de la cartera, mientras que la Clave Privada Maestra permite acceder dichos fondos y transferirlos. Conociendo la clave Privada, se puede conocer la clave Pública, pero nunca al revés. Por todo esto, la clave Privada debe custodiarse de manera muy segura, mientras que con la Pública podemos ser un poco menos precavidos ya que si alguien la obtuviera, podría llegar a ver nuestros fondos, pero nunca obtenerlos. Si esta clave pública de sólo lectura (watch-only) la utilizamos en un PC con TAILS, reducimos al mínimo el riesgo de esta fuga de privacidad.
@@ -31,6 +34,9 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
 - No necesitamos un ordenador diferente para cada función, estos pendrives podremos cargarlos en cualquier PC o portátil que tengamos disponible, incluso usar el mismo arrancando cada vez con un pendrive. Se trata de un Linux que carga desde el pendrive y no accede ni cambia nada en el ordenador donde se arranca. Tras apagarlo no queda ningún rasto, ni pueden acceder a él virus que haya en el Windows instalado de ese mismo PC.
 
 - Utilizaremos el **almacenamiento persistente encriptado** en cada uno de los pendrive Linux TAILS. TAILS genera una partición encriptada con una contraseña, por lo que nadie podría acceder al contenido en caso de obtener dicho pendrive. Aquí podremos almacenar, aparte de la cartera, cualquier documento privado que queramos. No se podrá acceder a ningún fichero en el pendrive encriptado sin conocer la contraseña.
+
+### 1.1.- Recomendacionex extra
+  - Utilizar un nodo propio, en lugar de uno público. Con esto logramos tanto mantener la privacidad en nuestras transacciones, como garantizar que nuestras consultas sobre las transacciones son verídicas y no han sido manipuladas. Garantizamos que el envío de transacciones a la red lo realizaremos nosotros mismos, con nuestro propio servidor, sin depender de equipos de terceros. Hay opciones sencillas y con una mínima configuración como **[Umbrel](https://getumbrel.com)**, otras más personalizadas pero manteniendo la sencillez de hacerlo todo automático como **[Raspiblitz](https://github.com/rootzoll/raspiblitz)**, y otras como el tutorial **[RaspiNail](https://regiregi22.github.io/RaspiNail)** donde el objetivo es aprender a hacer paso a paso lo necesario para montar a mano nuestro propio nodo.
   
 ## 2.- Requisitos
   * -1x pendrive de 8Gb mínimo (lo llamaremos "Pendrive 1 OFFLINE").
