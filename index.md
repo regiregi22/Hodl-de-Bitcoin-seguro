@@ -18,9 +18,10 @@
   * 5.4.- Recibir fondos
   * 5.5.- Enviar fondos
   * 5.6.- Confirmar fondos (Opcional)
-* 6.- Actualizaciones
+* 6.- Extras
   * 6.1.- Actualizar TAILS
   * 6.2.- Actualizar Electrum
+  * 6.3.- Instalar cartera Sparrow
 
 ## 1.- Introducción
 ### 1.1.- Objetivo de la guía
@@ -92,7 +93,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
  
     
 ### 5.2.- Cartera privada para firmar
-  - Desde el PC arrancado con "Pendrive 1 OFFLINE", abrimos Electrum desde el menú. En le ponemos un nombre a la cartera (por ejemplo "MiCartera1"), seleccionamos "Standard Wallet" y despues "I already have a seed". Introducimos las 24 palabras una detrás de otra, dejando un espacio entre cada una, en el orden preciso. En "Options", marcamos "BIP39" y "Extend this seed with custom words". Deberá indicar el estado "checksum: OK". En la siguiente ventana, introducimos una passpharase que queramos (tambien llamada palabra 25), **ESTA PALABRA ES NECESARIA PARA RECUPERAR LA CARTERA**. Es importante **[elegir una Passphrase segura](https://xkcd.com/936/)** , se admiten mayúsculas, minúsculas y números, pero **no se recomienda utilizar caracteres extraños** por futuros problemas de copmpatibilidad. En la siguiente ventana, dejamos seleccionado "native segwit (p2wpkh)". Introducimos una contraseña para acceder al fichero de la cartera (**IMPORTANTE**, esto no es la Passphrase de recuperación, sino una contraseña para poder abrir la cartera desde Electrum, ya que por seguridad se guarda encriptada). 
+  - Desde el PC arrancado con "Pendrive 1 OFFLINE", abrimos Electrum desde el menú. En le ponemos un nombre a la cartera (por ejemplo "MiCartera1"), seleccionamos "Standard Wallet" y despues "I already have a seed". Introducimos las 24 palabras una detrás de otra, dejando un espacio entre cada una, en el orden preciso. En "Options", marcamos "BIP39" y "Extend this seed with custom words". Deberá indicar el estado "checksum: OK". En la siguiente ventana, introducimos una passpharase que queramos (tambien llamada palabra 25), **ESTA PALABRA ES NECESARIA PARA RECUPERAR LA CARTERA**. Es importante **[elegir una Passphrase segura](https://xkcd.com/936/)** , se admiten mayúsculas, minúsculas y números, pero **no se recomienda utilizar caracteres extraños** por futuros problemas de copmpatibilidad. En la siguiente ventana, dejamos seleccionado "native segwit (p2wpkh)" y verificamos que la ruta de derivación sea "m/84'/0'/0'". Introducimos una contraseña para acceder al fichero de la cartera (**IMPORTANTE**, esto no es la Passphrase de recuperación, sino una contraseña para poder abrir el fichero de la cartera desde Electrum, ya que por seguridad se guarda encriptada. La Passphrase es lo que usaremos junto a la Semilla cuando necesitemos restaurar las claves privadas en algún momento. Por eso es tan importante guardar ambas con seguridad y por duplicado en varios lugares). 
   
 ### 5.3.- Cartera sólo lectura
   - Con la cartera privada abierta en "Pendrive 1 OFFLINE", vamos al menú "Wallet/Information" y copiamos la Master Public Key en un fichero de texto en "Pendrive 3" (opcionalmente, si tenemos webcams y 2 PCs podemos transmitirlo mediante QR). Apagamos el sistema, quitamos el "Pendrive 1 OFFLINE" y conectamos "Pendrive 2 ONLINE", y encendemos el PC. Abrimos Electrum, en nombre de cartera usamos la misma que anteriormente (por ejemplo "MiCartera1"), elegimos "Standard Wallet" y despues "Use Public or Private keys". Pegamos aqui la Master Public Key que hemos guardado en "Pendrive 3" (o mediante QR con webcams), y en la siguiente ventana escribimos la contraseña que hemos usado para la cartera privada (NO LA PASSPHRASE). A continuación se conectará a la red y nos indicará que ha sincronizado, mostrando 0 bitcoins de fondo. Ya tenemos nuestra cartera de sólo lectura.
@@ -114,13 +115,16 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Podemos acelerar el envío si hemos puesto una tasa demasiado baja mediante la función [CPFP](https://academy.bit2me.com/que-es-child-pays-for-parent-cpfp/) (https://academy.bit2me.com/que-es-child-pays-for-parent-cpfp/) y la función [RBF](https://academy.bit2me.com/que-es-replace-by-fee-rbf/) (https://academy.bit2me.com/que-es-replace-by-fee-rbf/), pero esto queda fuera del alcance de este documento.
 
 
-## 6.- Actualizaciones
+## 6.- Extras
 
 ### 6.1.- Actualizar TAILS
   - Primero actualizamos el pendrive ONLINE. Arrancamos el PC con el pendrive conectado y el cable de red (o WIFI), deberá informarnos que tiene una actualización al arrancar. Si no lo hace, hay que **[seguir estas instrucciones](https://tails.boum.org/doc/upgrade/index.es.html)** abriendo una ventana de Terminal desde el menú inicio e introduciendo el comando `tails-upgrade-frontend-wrapper`. Al terminar, reiniciamos el sistema tal como nos solicita.
   - Puesto que el pendrive OFFLINE no puede conectarse a Internet, lo actualizaremos conectándolo al PC tras haber arrancado con el pendrive ONLINE, una vez ha sido actualizado de antemano. Seguiremos **[el punto 5/5 de esta guía](https://tails.boum.org/upgrade/tails/index.es.html)**, desde el menú inicio Applications / Tails / Tails Installer, seleccionamos el pendrive insertado OFFLINE y le damos a Upgrade.
 
-### 6.1.- Actualizar Electrum
+### 6.2.- Actualizar Electrum
   - Arrancando con el pendrive ONLINE, nos descargamos la última versión Appimage para Linus desde **[su página de descarga](https://electrum.org/#download)** y la copiamos en nuestra carpeta personal persistente. Hacemos click derecho / Propiedades sobre el archivo, y en la pestaña permisos, le damos permisos de ejecución. A partir de ahora, ejecutaremos este archivo de Electrum en lugar de versión del menú inicio. Copiamos el fichero mediante un tercer pendrive para llevárnoslo al PC offline.
 
-  - Arrancando con el pendrive OFFLINE, copiamos el fichero a la carpeta persistente y le damos permisos de ejecución como hicimos en el paso anterior.
+  - Arrancando con el pendrive OFFLINE, copiamos el fichero a la carpeta persistente y le damos permisos de ejecución como hicimos en el paso anterior.  
+
+### 6.3.- Instalar cartera Sparrow
+  - Si se quiere añadir la cartera Sparrow, esta puede instalarse en el pendrive ONLINE descargando desde su web la version para **[Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)** y lanzando el comando `sudo dpkg -i sparrow_1.5.2-1_amd64.deb`. Se puede copiar este archivo al pendrive OFFLINE e instalar con el mismo comando.
