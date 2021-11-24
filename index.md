@@ -18,6 +18,9 @@
   * 5.4.- Recibir fondos
   * 5.5.- Enviar fondos
   * 5.6.- Confirmar fondos (Opcional)
+* 6.- Actualizaciones
+  * 6.1.- Actualizar TAILS
+  * 6.2.- Actualizar Electrum
 
 ## 1.- Introducción
 ### 1.1.- Objetivo de la guía
@@ -70,7 +73,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
     
 ### 4.2.- Pendrive 2 ONLINE (Opcional)
   
-   - Apagamos el PC. Conectamos el "Pendrive 2 ONLINE" y lo encendemos. Debe arrancar Linux TAILS. Si no lo hace, seguir las instrucciones de **[Starting with the Boot Menu key](https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key)** (https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key) .  
+   - Apagamos el PC. Conectamos el "Pendrive 2 ONLINE", y lo encendemos. **Debemos conectarle el cable de red o logarnos en la red WIFI al arrancar el sistema**. Debe arrancar Linux TAILS. Si no lo hace, seguir las instrucciones de **[Starting with the Boot Menu key](https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key)** (https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key) .  
    - En la ventana de Bienvenida de TAILS, elegimos el idioma, el teclado y la región. Hacemos click debajo en el símbolo "+". Le damos a "Start TAILS". Una vez en el Escritorio, en la ventana de Tor elegimos "Connect Tor automatically" y le damos a Connect. Cerramos la ventana.  
    - Para crear el almacenamiento persistente, nos vamos al menú "Applications/Tails/Configure persistent volume", e introducimos la contraseña "Pendrive 2 ONLINE". En el siguiente menú, marcamos las opciones "Personal Data", "Welcome Screen", "Network Connections", "Bitcoin Client" y "Dotfiles". Reiniciamos.  
    - De nuevo, elegimos el idioma, el teclado y la región. Introducimos la contraseña "Pendrive 2 ONLINE" en el campo de passphrase, y clicamos en "Unlock". Hacemos click debajo en el símbolo "+". Elegimos la opción "Offline mode" y "Disable all networking", y le damos a "Start TAILS". En los siguientes arranques, bastará con introducir la contraseña para que cargue estas opciones automáticamente.  
@@ -109,3 +112,15 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
 ### 5.6.- Confirmar fondos (Opcional)
   - Podemos ver el estado de una transacción y su posición en la cola de espera utilizando el servicio de **[mempool.space](https://mempool.space)** (https://mempool.space). Para ello, hacemos doble click sobre una transacción y en la ventana que se nos abre, copiamos el número de transacción y lo pegamos en el cuadro de búsqueda de la web. En caso que no se haya confirmado aún, podremos ver con una flecha blanca en que posición está dentro de la mempool (la cola de espera de transacciones para ser confirmadas) en función de la tasa (fee) que hayamos pagado.
   - Podemos acelerar el envío si hemos puesto una tasa demasiado baja mediante la función [CPFP](https://academy.bit2me.com/que-es-child-pays-for-parent-cpfp/) (https://academy.bit2me.com/que-es-child-pays-for-parent-cpfp/) y la función [RBF](https://academy.bit2me.com/que-es-replace-by-fee-rbf/) (https://academy.bit2me.com/que-es-replace-by-fee-rbf/), pero esto queda fuera del alcance de este documento.
+
+
+## 6.- Actualizaciones
+
+### 6.1.- Actualizar TAILS
+  - Primero actualizamos el pendrive ONLINE. Arrancamos el PC con el pendrive conectado y el cable de red (o WIFI), deberá informarnos que tiene una actualización al arrancar. Si no lo hace, hay que **[seguir estas instrucciones](https://tails.boum.org/doc/upgrade/index.es.html)** abriendo una ventana de Terminal desde el menú inicio e introduciendo el comando `tails-upgrade-frontend-wrapper`. Al terminar, reiniciamos el sistema tal como nos solicita.
+  - Puesto que el pendrive OFFLINE no puede conectarse a Internet, lo actualizaremos conectándolo al PC tras haber arrancado con el pendrive ONLINE, una vez ha sido actualizado de antemano. Seguiremos **[el punto 5/5 de esta guía](https://tails.boum.org/upgrade/tails/index.es.html)**, desde el menú inicio Applications / Tails / Tails Installer, seleccionamos el pendrive insertado OFFLINE y le damos a Upgrade.
+
+### 6.1.- Actualizar Electrum
+  - Arrancando con el pendrive ONLINE, nos descargamos la última versión Appimage para Linus desde **[su página de descarga](https://electrum.org/#download)** y la copiamos en nuestra carpeta personal persistente. Hacemos click derecho / Propiedades sobre el archivo, y en la pestaña permisos, le damos permisos de ejecución. A partir de ahora, ejecutaremos este archivo de Electrum en lugar de versión del menú inicio. Copiamos el fichero mediante un tercer pendrive para llevárnoslo al PC offline.
+
+  - Arrancando con el pendrive OFFLINE, copiamos el fichero a la carpeta persistente y le damos permisos de ejecución como hicimos en el paso anterior.
