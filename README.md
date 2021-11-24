@@ -40,7 +40,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
 
 - Utilizaremos el **almacenamiento persistente encriptado** en cada uno de los pendrive Linux TAILS. TAILS genera una partición encriptada con una contraseña, por lo que nadie podría acceder al contenido en caso de obtener dicho pendrive. Aquí podremos almacenar, aparte de la cartera, cualquier documento privado que queramos. No se podrá acceder a ningún fichero en el pendrive encriptado sin conocer la contraseña.
 
-### 1.1.- Recomendacionex extra
+### 1.1.- Recomendaciones extra
   - Utilizar un nodo propio, en lugar de uno público. Con esto logramos tanto mantener la privacidad en nuestras transacciones, como garantizar que nuestras consultas sobre las transacciones son verídicas y no han sido manipuladas. Garantizamos que el envío de transacciones a la red lo realizaremos nosotros mismos, con nuestro propio servidor, sin depender de equipos de terceros. Hay opciones sencillas y con una mínima configuración como **[Umbrel](https://getumbrel.com)**, otras más personalizadas pero manteniendo la sencillez de hacerlo todo automático como **[Raspiblitz](https://github.com/rootzoll/raspiblitz)**, y otras como el tutorial **[RaspiNail](https://regiregi22.github.io/RaspiNail)** donde el objetivo es aprender a hacer paso a paso lo necesario para montar a mano nuestro propio nodo.
   
 ## 2.- Requisitos
