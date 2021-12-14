@@ -131,4 +131,6 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Arrancando con el pendrive OFFLINE, copiamos el fichero a la carpeta persistente y le damos permisos de ejecución como hicimos en el paso anterior.  
 
 ### 6.3.- Instalar cartera Sparrow
-  - Si se quiere añadir la cartera Sparrow, esta puede instalarse en el pendrive ONLINE descargando desde su web la version para **[Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)** y lanzando el comando `sudo dpkg -i sparrow_1.5.2-1_amd64.deb`. Se puede copiar este archivo al pendrive OFFLINE e instalar con el mismo comando.
+  - Si se quiere añadir la cartera Sparrow, esta puede instalarse en el pendrive ONLINE descargando desde su web la version para **[Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)** y lanzando el comando `sudo dpkg -i sparrow_1.5.2-1_amd64.deb`. Desde el menú "Applications" y dentro en "Other", podemos lanzar Sparrow.
+  
+  - Se puede copiar este archivo al pendrive OFFLINE e instalar con el mismo comando.
