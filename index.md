@@ -1,5 +1,8 @@
 # HODL de Bitcoin seguro (v1.2)
 
+  - **IMPORTANTE:** Este método puede ser igual de seguro que utilizar una hardware wallet comercial, pero sólo si se realiza **SIEMPRE** de manera estricta y cuidadosa. Si estás empezando o sospechas que puede ser muy complicado para tí, lo mejor es comenzar utilizando una hardware wallet comercial como Ledger, Trezor o Coldcard. Luego, siempre puedes volver a este tutorial y aprender a utilizarlo, teniendo la confianza de disponer ya de antemano de una manera segura para almacenar y gestionar tus bitcoins.
+
+
 * 1.- Introducción
   * 1.1.- Objetivo de la guía
   * 1.2.- Recomendaciones extra
@@ -26,6 +29,8 @@
 ## 1.- Introducción
 ### 1.1.- Objetivo de la guía
   - El objeto de esta guía es explicar la manera de custodiar tus bitcoins de la manera más segura y barata, utilizando un **almacenamiento frío (cold storage)** y **separado por aire (airgapped)**, firmando las transacciones utilizando un PC securizado y desconectado de la red. Para consultar la cartera, utilizaremos el PC conectado a la red. Es un tutorial orientado a quienes custodian Bitcoin a largo plazo, habitualmente ingresan bitcoins en la cartera, y sólo esporádicamente necesitan enviarlos. Si vas a hacer muchos envíos de bitcoins a menudo, existen otras soluciones comerciales más cómodas, como Coldcard MK3.
+
+
   
   - Una cartera Bitcoin consta de dos Claves Maestras: la **Clave Pública Maestra** y la **Clave Privada Maestra**. La Clave Pública Maestra permite sólo-lectura de los fondos de la cartera, mientras que la Clave Privada Maestra permite acceder dichos fondos y transferirlos. Conociendo la clave Privada, se puede conocer la clave Pública, pero nunca al revés. Por todo esto, la clave Privada debe custodiarse de manera muy segura, mientras que con la Pública podemos ser un poco menos precavidos ya que si alguien la obtuviera, podría llegar a ver nuestros fondos, pero nunca obtenerlos. Si esta clave pública de sólo lectura (watch-only) la utilizamos en un PC con TAILS, reducimos al mínimo el riesgo de esta fuga de privacidad.
   
@@ -131,6 +136,5 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Arrancando con el pendrive OFFLINE, copiamos el fichero a la carpeta persistente y le damos permisos de ejecución como hicimos en el paso anterior.  
 
 ### 6.3.- Instalar cartera Sparrow
-  - Si se quiere añadir la cartera Sparrow, esta puede instalarse en el pendrive ONLINE descargando desde su web la version para **[Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)** y lanzando el comando `sudo dpkg -i sparrow_1.5.2-1_amd64.deb`. Desde el menú "Applications" y dentro en "Other", podemos lanzar Sparrow.
-  
-  - Se puede copiar este archivo al pendrive OFFLINE e instalar con el mismo comando.
+  - El inconveniente de utilizar Sparrow en TAILS, es que hay que hacer el paso de instalación cada vez que se reinicie el sistema. Si se quiere añadir la cartera Sparrow, esta puede descargarse directamente en el pendrive ONLINE a través de TOR, utilizando la descargar **[Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)** y lanzando el comando `sudo dpkg -i sparrow_1.5.2-1_amd64.deb` desde la consola de TAILS. Desde el menú "Applications" y dentro "Other", podremos lanzar Sparrow. A continuación, se puede copiar este archivo al pendrive OFFLINE e instalar con el mismo comando.
+  - Es importante una vez configurada una cartera en Sparrow, hacer una copia de la misma en la partición persistente de TAILS desde el menú "File" y "Export Wallet", para evitar tener que configurarla cada vez que iniciemos TAILS (aunque la propia aplicación Sparrow sí habría que instalarla cada vez con el comando anterior).
