@@ -39,11 +39,11 @@
 Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no moverlos), tambien podríamos cargar la clave pública en una cartera en en un sistema menos seguro como Windows o Android/iOS para mayor comodidad, por lo que no necesitaríamos el pendrive llamado "Pendrive 2 ONLINE". Es por ello que este pendrive es opcional.
 **NUNCA CARGAR LA CLAVE PRIVADA MAESTRA EN UN PC CONECTADO A INTERNET. SÓLO CARGAR LA CLAVE PÚBLICA MAESTRA**.  
   
- - No necesitamos un ordenador diferente para cada función, estos pendrives podremos cargarlos en cualquier PC o portátil que tengamos disponible, incluso usar el mismo arrancando cada vez con un pendrive. Se trata de un Linux que carga desde el pendrive y no accede ni cambia nada en el ordenador donde se arranca. Tras apagarlo no queda ningún rasto, ni pueden acceder a él virus que haya en el Windows instalado de ese mismo PC.
+  - No necesitamos un ordenador diferente para cada función, estos pendrives podremos cargarlos en cualquier PC o portátil que tengamos disponible, incluso usar el mismo arrancando cada vez con un pendrive. Se trata de un Linux que carga desde el pendrive y no accede ni cambia nada en el ordenador donde se arranca. Tras apagarlo no queda ningún rasto, ni pueden acceder a él virus que haya en el Windows instalado de ese mismo PC.
 
- - Utilizaremos el **almacenamiento persistente encriptado** en cada uno de los pendrive Linux TAILS. TAILS genera una partición encriptada con una contraseña, por lo que nadie podría acceder al contenido en caso de obtener dicho pendrive. Aquí podremos almacenar, aparte de la cartera, cualquier documento privado que queramos. No se podrá acceder a ningún fichero en el pendrive encriptado sin conocer la contraseña.
+  - Utilizaremos el **almacenamiento persistente encriptado** en cada uno de los pendrive Linux TAILS. TAILS genera una partición encriptada con una contraseña, por lo que nadie podría acceder al contenido en caso de obtener dicho pendrive. Aquí podremos almacenar, aparte de la cartera, cualquier documento privado que queramos. No se podrá acceder a ningún fichero en el pendrive encriptado sin conocer la contraseña.
 
-### 1.1.- Recomendaciones extra
+### 1.2.- Recomendaciones extra
   - Utilizar un nodo propio, en lugar de uno público. Con esto logramos tanto mantener la privacidad en nuestras transacciones, como garantizar que nuestras consultas sobre las transacciones son verídicas y no han sido manipuladas. Garantizamos que el envío de transacciones a la red lo realizaremos nosotros mismos, con nuestro propio servidor, sin depender de equipos de terceros. Hay opciones sencillas y con una mínima configuración como **[Umbrel](https://getumbrel.com)**, otras más personalizadas pero manteniendo la sencillez de hacerlo todo automático como **[Raspiblitz](https://github.com/rootzoll/raspiblitz)**, y otras como el tutorial **[RaspiNail](https://regiregi22.github.io/RaspiNail)** donde el objetivo es aprender a hacer paso a paso lo necesario para montar a mano nuestro propio nodo.
   
 ## 2.- Requisitos
@@ -59,7 +59,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   * -(Opcional) 2x Webcams y 2x PCs. Método más seguro. Puede evitarse utilizar el "Pendrive 3" para transferir la transacción entre PCs si se utilizan 2 PCs, cada uno con una webcam, y se transfiere mediante lector QR.      
     
 ## 3-. Descargas necesarias
-### 3.1.- Generador de cartera
+###   3.1.- Generador de cartera
   - Accedemos al repositorio Github de **[SegWitAddress.org](https://github.com/coinables/segwitaddress/releases) (https://github.com/coinables/segwitaddress/releases)** (es un generador de semilla HD para direcciones Segwit). Nos descargamos de la última versión, el fichero "Source Code.zip". Lo guardamos en "Pendrive 3" y lo descomprimimos en el mismo pendrive.
   
 ###   3.2.- Linux TAILS:
@@ -77,10 +77,10 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
     
 ### 4.2.- Pendrive 2 ONLINE (Opcional)
   
-   - Apagamos el PC. Conectamos el "Pendrive 2 ONLINE", y lo encendemos. **Debemos conectarle el cable de red o logarnos en la red WIFI al arrancar el sistema**. Debe arrancar Linux TAILS. Si no lo hace, seguir las instrucciones de **[Starting with the Boot Menu key](https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key)** (https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key) .  
-   - En la ventana de Bienvenida de TAILS, elegimos el idioma, el teclado y la región. Hacemos click debajo en el símbolo "+". Le damos a "Start TAILS". Una vez en el Escritorio, en la ventana de Tor elegimos "Connect Tor automatically" y le damos a Connect. Cerramos la ventana.  
-   - Para crear el almacenamiento persistente, nos vamos al menú "Applications/Tails/Configure persistent volume", e introducimos la contraseña "Pendrive 2 ONLINE". En el siguiente menú, marcamos las opciones "Personal Data", "Welcome Screen", "Network Connections", "Bitcoin Client" y "Dotfiles". Reiniciamos.  
-   - De nuevo, elegimos el idioma, el teclado y la región. Introducimos la contraseña "Pendrive 2 ONLINE" en el campo de passphrase, y clicamos en "Unlock". Hacemos click debajo en el símbolo "+". Elegimos la opción "Offline mode" y "Disable all networking", y le damos a "Start TAILS". En los siguientes arranques, bastará con introducir la contraseña para que cargue estas opciones automáticamente.  
+  - Apagamos el PC. Conectamos el "Pendrive 2 ONLINE", y lo encendemos. **Debemos conectarle el cable de red o logarnos en la red WIFI al arrancar el sistema**. Debe arrancar Linux TAILS. Si no lo hace, seguir las instrucciones de **[Starting with the Boot Menu key](https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key)** (https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key) .  
+  - En la ventana de Bienvenida de TAILS, elegimos el idioma, el teclado y la región. Hacemos click debajo en el símbolo "+". Le damos a "Start TAILS". Una vez en el Escritorio, en la ventana de Tor elegimos "Connect Tor automatically" y le damos a Connect. Cerramos la ventana.  
+  - Para crear el almacenamiento persistente, nos vamos al menú "Applications/Tails/Configure persistent volume", e introducimos la contraseña "Pendrive 2 ONLINE". En el siguiente menú, marcamos las opciones "Personal Data", "Welcome Screen", "Network Connections", "Bitcoin Client" y "Dotfiles". Reiniciamos.  
+  - De nuevo, elegimos el idioma, el teclado y la región. Introducimos la contraseña "Pendrive 2 ONLINE" en el campo de passphrase, y clicamos en "Unlock". Hacemos click debajo en el símbolo "+". Elegimos la opción "Offline mode" y "Disable all networking", y le damos a "Start TAILS". En los siguientes arranques, bastará con introducir la contraseña para que cargue estas opciones automáticamente.  
     
 ## 5.- Funcionamiento de cartera
   - El **primer paso 5.1** es generar la cartera. Obtendremos una semilla de tipo HD BIP39, la cual nos podrá servir en el futuro para otros software de cartera diferentes a Electrum. Debemos anotarla en papel y guardarla bien, haciendo varias copias de seguridad en lugares diferentes. Si se pierde la semilla, perderemos todo. Si alguien obtiene nuestra semilla, podrá llevarse nuestros fondos. Generaremos una contraseña (passphrase) para complementar la semilla, la cual es IMPRESCINDIBLE para recuperar la cartera, no sirve sólo con la semilla. Podemos anotarla junto a la semilla o en un lugar diferente para mayor seguridad, memorizarla, etc.  
