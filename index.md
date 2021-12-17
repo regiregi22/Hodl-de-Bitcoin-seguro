@@ -66,7 +66,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Accedemos al repositorio Github de **[SegWitAddress.org](https://github.com/coinables/segwitaddress/releases) (https://github.com/coinables/segwitaddress/releases)** (es un generador de semilla HD para direcciones Segwit). Nos descargamos de la última versión, el fichero "Source Code.zip". Lo guardamos en "Pendrive 3" y lo descomprimimos en el mismo pendrive.  
   
 ###   3.2.- Linux TAILS:
-  - Accedemos a la **[web de TAILS](https://tails.boum.org) (https://tails.boum.org)**, vamos al menú "Obtener TAILS", click en instalar desde Windows, y seguimos los pasos para descargar el fichero de imagen (fichero .img). Hacemos click en "Verificar la descarga". Continuamos descargando el programa Etcher, y grabamos el "Pendrive 1 OFFLINE" siguiendo las instrucciones. Repetimos el grabado de la misma imagen sobre el "Pendrive 2 ONLINE" (Opcional).  
+  - Accedemos a la **[web de TAILS](https://tails.boum.org) (https://tails.boum.org)**, vamos al menú "Obtener TAILS", click en instalar desde Windows, y seguimos los pasos para descargar el fichero de imagen (fichero .img). Hacemos click en "Verificar la descarga". Continuamos descargando el programa **[Balena Etcher](https://www.balena.io/etcher/)**, y grabamos el "Pendrive 1 OFFLINE" siguiendo las instrucciones. Repetimos el grabado de la misma imagen sobre el "Pendrive 2 ONLINE" (Opcional).  
   
 ###   3.3.- (Opcional) Script "rolls.py":
   - Nos debemos descargar el script **[rolls.py](https://raw.githubusercontent.com/Coldcard/firmware/master/docs/rolls.py)** (https://raw.githubusercontent.com/Coldcard/firmware/master/docs/rolls.py) y copiarlo mediante al "Pendrive 3".  
@@ -167,4 +167,8 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Sería recomendable anexar algún tipo de indicación advirtiendo **en contra** de utilizar esa misma semilla como cartera personal más allá del propio regalo, al no considerarse privada por no haberla generado ellos mismos. Alguien novato e incauto podría tratar de aprovechar esa misma cartera para hodlear bitcoins. Debemos indicarles que la mejor opción para usar esos fondos llegado el momento, sería hacer un "sweep" o "barrido" de dichos fondos a una cartera propia, segura y privada, generada por ellos mismos, una hardware wallet, etc.  
 
 #### 6.4.2.- Generar semilla para regalo 
-  - No es necesario ningún requisito previo del tutorial para generar la semilla-regalo.
+  - No es requisito haber realizado ningún paso previo del tutorial para generar la semilla-regalo. Sólo necesitaremos un pendrive de al menos 8Gb, y otro pendrive del tamaño que sea (ocuparemos sólo unos mb).
+
+  - **Paso 1:**  Desde un PC con internet, nos descargamos lo indicado en los puntos 3.1 (generador de cartera) y 3.3 (opcional, generador de cartera mediante dados) y lo copiamos en el pendrive pequeño. Nos descargamos la imagen de disco TAILS del punto 3.2 y la grabamos en el pendrive de 8Gb.
+ 
+  - **Paso 2:**  
