@@ -26,8 +26,8 @@
   * 6.2.- Actualizar Electrum
   * 6.3.- Instalar cartera Sparrow
   * 6.4.- Cómo regalar bitcoins a alguien sin cartera  
-   * 6.4.1.- Introducción  
-   * 6.4.2.- Generar semilla para regalo
+        * 6.4.1.- Introducción  
+        * 6.4.2.- Generar semilla para regalo  
 
 ## 1.- Introducción
 ### 1.1.- Objetivo de la guía
