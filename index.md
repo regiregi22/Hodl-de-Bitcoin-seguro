@@ -25,6 +25,9 @@
   * 6.1.- Actualizar TAILS
   * 6.2.- Actualizar Electrum
   * 6.3.- Instalar cartera Sparrow
+  * 6.4.- Cómo regalar bitcoins a alguien sin cartera
+      * 6.4.1- Introducción 
+      * 6.4.1- Generar semilla para regalo
 
 ## 1.- Introducción
 ### 1.1.- Objetivo de la guía
@@ -136,3 +139,12 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
 ### 6.3.- Instalar cartera Sparrow
   - El inconveniente de utilizar Sparrow en TAILS, es que hay que hacer el paso de instalación cada vez que se reinicie el sistema. Si se quiere añadir la cartera Sparrow, esta puede descargarse directamente en el pendrive ONLINE a través de TOR, utilizando la descargar **[Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)** y lanzando el comando `sudo dpkg -i sparrow_1.5.2-1_amd64.deb` desde la consola de TAILS. Desde el menú "Applications" y dentro "Other", podremos lanzar Sparrow. A continuación, se puede copiar este archivo al pendrive OFFLINE e instalar con el mismo comando.
   - Es importante una vez configurada una cartera en Sparrow, hacer una copia de la misma en la partición persistente de TAILS desde el menú "File" y "Export Wallet", para evitar tener que configurarla cada vez que iniciemos TAILS (aunque la propia aplicación Sparrow sí habría que instalarla cada vez con el comando anterior).
+
+### 6.4.- Cómo regalar bitcoins a alguien sin cartera.
+#### 6.4.1.- Introducción
+  - Queremos regalar bitcoins a amigos o familiares, pero no saben nada de como funciona Bitcoin, ni disponen de cartera de ningún tipo. La mejor opción pasaría por generarles una semilla de cartera HD, transferirles los fondos a una dirección de esa cartera y entregarles las 24 palabras.
+  - Estas palabras de la semilla podrían entregarse escritas a lapicero (no se borra si se moja) en una tarjeta de felicitación navideña o una carta escrita a mano, se pueden [grabar sobre unas arandelas]([Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)) o cualquier método original que se nos ocurra.
+  - Para mantener el **almacenamiento frío**, evitaremos introducir las palabras en cualquier ordenador conectado a internet o que no garanticemos como seguro. Por supuesto, quedan descartadas tiendas que diseñan regalos personalizados como tazas o fotografías de recuerdo. Cualquier método que implique dar a conocer la semilla a terceras personas.
+  - **SIEMPRE** nos guardaremos una copia nosotros bien custodiada de dicha semilla. Primero, al haberla generado nosotros, no estamos vulnerando la privacidad de quien se regala de cara a nosotros, porque ya asume que disponemos de una copia. Segundo, y más importante, las personas que no tienen relación con Bitcoin por definición no estiman el valor y la importancia de custodiar una semilla y no perderla. Les haremos un gran favor custodiandola si dentro de unos años se dan cuenta que la perdieron entre una nube de turrón y licores navideños.
+  - Sería recomendable dentro de lo posible, anexar algún tipo de indicación advirtiendo **en contra** de utilizar esa misma semilla como cartera personal más allá del propio regalo, ya que no podemos considerarla privada al no haberla generado ellos mismos en privado. Indicarles que la mejor opción pasaría por hacer un "sweep" o "barrido" de dichos fondos a una cartera propia generada por ellos mismos, hardware wallet, etc.
+
