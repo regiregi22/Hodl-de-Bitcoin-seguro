@@ -178,3 +178,5 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - **Paso 4:**  Realizamos el punto 5.2, pero **cuando nos pida una passphrase, la dejamos en blanco**.
 
   - **Paso 5:**  Ahora sólo nos queda coger de esta cartera cargada en Electrum la primera dirección y enviar allí los bitcoins. Si hacemos click en "Recibir", podemos hacer la transferencia leyendo el QR de la dirección con un móvil, podemos copiar esa dirección en un txt o el método que queramos.
+
+  - **Paso 6:**  Cuando hemos confirmado que se han enviado correctamente los fondos a la dirección de destino, podemos desconectar y formatear el pendrive, siempre asegurando antes que tenemos bien copiadas las palabras de la semilla-regalo.
