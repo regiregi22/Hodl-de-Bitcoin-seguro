@@ -175,7 +175,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
 
   - **Paso 3:**  Realizamos completo el punto 5.1, generar la semilla-regalo usando uno de los dos métodos propuestos. Anotamos las 24 palabras en un papel.
 
-  - **Paso 4:**  Realizamos el punto 5.2, pero **NO MARCAMOS la opcion “Extend this seed with custom words”**.
+  - **Paso 4:**  Realizamos el punto 5.2, pero **NO MARCAMOS la opcion “Extend this seed with custom words”**. Es decir, no utilizaremos una passphrase. Despues nos pedirá una "password" para encriptar el fichero de la cartera, lo dejamos en blanco, pues va a ser borrada despues.
 
   - **Paso 5:**  Ahora sólo nos queda coger de esta cartera cargada en Electrum la primera dirección y enviar allí los bitcoins. Si hacemos click en "Recibir", podemos hacer la transferencia leyendo el QR de la dirección con un móvil, podemos copiar esa dirección en un txt o el método que queramos.
 
