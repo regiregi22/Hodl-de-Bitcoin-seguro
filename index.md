@@ -167,8 +167,10 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Sería recomendable anexar algún tipo de indicación advirtiendo **en contra** de utilizar esa misma semilla como cartera personal más allá del propio regalo, al no considerarse privada por no haberla generado ellos mismos. Alguien novato e incauto podría tratar de aprovechar esa misma cartera para hodlear bitcoins. Debemos indicarles que la mejor opción para usar esos fondos llegado el momento, sería hacer un "sweep" o "barrido" de dichos fondos a una cartera propia, segura y privada, generada por ellos mismos, una hardware wallet, etc.  
 
 #### 6.4.2.- Generar semilla para regalo 
-  - No es requisito haber realizado ningún paso previo del tutorial para generar la semilla-regalo. Sólo necesitaremos un pendrive de al menos 8Gb, y otro pendrive del tamaño que sea (ocuparemos sólo unos mb).
+  - No es requisito haber realizado ningún paso previo del tutorial para generar la semilla-regalo. Sólo necesitaremos un pendrive de al menos 8Gb, y otro pendrive del tamaño que sea (sólo necesitamos unos pocos megabytes).
 
-  - **Paso 1:**  Desde un PC con internet, nos descargamos lo indicado en los puntos 3.1 (generador de cartera) y 3.3 (opcional, generador de cartera mediante dados) y lo copiamos en el pendrive pequeño. Nos descargamos la imagen de disco TAILS del punto 3.2 y la grabamos en el pendrive de 8Gb.
+  - **Paso 1:**  Desde un PC con internet, nos descargamos lo indicado en los puntos 3.1 (generador de cartera) y 3.3 (opcional, generador de cartera mediante dados) y lo copiamos en el pendrive pequeño. Nos descargamos la imagen de disco TAILS del punto 3.2 y la grabamos en el pendrive de 8Gb según instrucciones.
  
-  - **Paso 2:**  
+  - **Paso 2:**  Realizamos los pasos de arrancar el PC con el pendrive TAILS indicados en el punto 4.1 (Pendrive 1 OFFLINE).  
+
+  - **Paso 3:**  
