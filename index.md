@@ -171,6 +171,10 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
 
   - **Paso 1:**  Desde un PC con internet, nos descargamos lo indicado en los puntos 3.1 (generador de cartera) y 3.3 (opcional, generador de cartera mediante dados) y lo copiamos en el pendrive pequeño. Nos descargamos la imagen de disco TAILS del punto 3.2 y la grabamos en el pendrive de 8Gb según instrucciones.
  
-  - **Paso 2:**  Realizamos los pasos de arrancar el PC con el pendrive TAILS indicados en el punto 4.1 (Pendrive 1 OFFLINE).  
+  - **Paso 2:**  Realizamos completo el punto 4.1, inicializar el PC con el pendrive TAILS (Pendrive 1 OFFLINE). Es importante realizar todo el proceso sin cable de red o wifi conectado.
 
-  - **Paso 3:**  
+  - **Paso 3:**  Realizamos completo el punto 5.1, generar la semilla-regalo usando uno de los dos métodos propuestos. Anotamos las 24 palabras en un papel.
+
+  - **Paso 4:**  Realizamos el punto 5.2, pero **cuando nos pida una passphrase, la dejamos en blanco**.
+
+  - **Paso 5:**  Ahora sólo nos queda coger de esta cartera cargada en Electrum la primera dirección y enviar allí los bitcoins. Si hacemos click en "Recibir", podemos hacer la transferencia leyendo el QR de la dirección con un móvil, podemos copiar esa dirección en un txt o el método que queramos.
