@@ -156,9 +156,9 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
 
 ### 6.4.- Cómo regalar bitcoins a alguien sin cartera.
 #### 6.4.1.- Introducción
-  - Queremos regalar bitcoins a amigos o familiares, pero no saben nada de como funciona Bitcoin, ni disponen de cartera de ningún tipo. La mejor opción pasaría por generarles una semilla de cartera Bitcoin, transferirles los fondos a una dirección de esa cartera y entregarles las 24 palabras en mano.  
+  - Queremos regalar bitcoins a amigos o familiares, pero no saben nada de como funciona Bitcoin, ni disponen de cartera de ningún tipo. La mejor opción pasaría por generarles una semilla de cartera Bitcoin, transferirles los fondos a una dirección de esa cartera y entregarles las 24 palabras en mano. La llamaremos, familiarmente, semilla-regalo.    
 
-  - Estas palabras de la semilla podrían entregarse escritas a lapicero (no se borra si se moja) en una tarjeta de felicitación navideña o una carta escrita a mano, se pueden [grabar sobre unas arandelas]([Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)) o por cualquier método físico que se nos ocurra. Lo bueno, si es simple, es doblemente bueno. No hagas complicado lo simple.   
+  - Estas palabras de la semilla-regalo podrían entregarse escritas a lapicero (no se borra si se moja) en una tarjeta de felicitación navideña o una carta escrita a mano, se pueden [grabar sobre unas arandelas]([Linux (Ubuntu/Debian)](https://sparrowwallet.com/download/)) o por cualquier método físico que se nos ocurra (nunca medios digitales). Lo bueno, si es simple, es doblemente bueno. No hagas complicado lo sencillo. No estás tratando con veteranos bitcoiners. Piensa en tu familia. Ellos no lo harían.   
 
   - Para mantener el **almacenamiento frío**, evitaremos introducir las palabras en cualquier ordenador conectado a internet, teléfono móvil o sistema offline que no garanticemos como seguro. Por supuesto, quedan descartadas tiendas que diseñan regalos personalizados como tazas o fotografías de recuerdo. Cualquier método que implique dar a conocer la semilla a terceras personas.  
 
@@ -167,4 +167,4 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Sería recomendable dentro de lo posible, anexar algún tipo de indicación advirtiendo **en contra** de utilizar esa misma semilla como cartera personal más allá del propio regalo, ya que no podemos considerarla privada al no haberla generado ellos mismos en privado. Desde el desconocimiento, alguien podría tratar de aprovechar esa misma cartera para hodlear bitcoins. Deberíamos indicarles que la mejor opción de hacer uso de esos fondos llegado el momento, sería hacer un "sweep" o "barrido" de dichos fondos a una cartera propia segura y privada generada por ellos mismos, una hardware wallet, etc.  
 
 #### 6.4.2.- Generar semilla para regalo 
-  - 
+  - No es necesario ningún requisito previo del tutorial para generar la semilla-regalo.
