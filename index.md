@@ -1,4 +1,4 @@
-# HODL de Bitcoin seguro (v1.2)
+# HODL de Bitcoin seguro (v1.3)
 
   - **IMPORTANTE:** Este método puede ser igual de seguro que utilizar una hardware wallet comercial, pero sólo si se realiza **SIEMPRE** de manera estricta y cuidadosa. Si estás empezando o sospechas que puede ser muy complicado para tí, lo mejor es comenzar utilizando una hardware wallet comercial como Ledger, Trezor o Coldcard. Luego, siempre puedes volver a este tutorial y aprender a utilizarlo, teniendo la confianza de disponer ya de antemano de una manera segura para almacenar y gestionar tus bitcoins.
 
