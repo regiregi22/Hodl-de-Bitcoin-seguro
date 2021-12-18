@@ -85,7 +85,7 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   
   - Apagamos el PC. Conectamos el "Pendrive 2 ONLINE", y lo encendemos. **Debemos conectarle el cable de red o logarnos en la red WIFI al arrancar el sistema**. Debe arrancar Linux TAILS. Si no lo hace, seguir las instrucciones de **[Starting with the Boot Menu key](https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key)** (https://tails.boum.org/doc/first_steps/start/pc/index.es.html#boot-menu-key).  
 
-  - En la ventana de Bienvenida de TAILS, elegimos el idioma, el teclado y la región. Hacemos click debajo en el símbolo "+". Le damos a "Start TAILS". Una vez en el Escritorio, en la ventana de Tor elegimos "Connect Tor automatically" y le damos a Connect. Cerramos la ventana.  
+  - En la ventana de Bienvenida de TAILS, elegimos el idioma, el teclado y la región. Hacemos click debajo en el símbolo "+" y habilitamos la opción "Administration password". Le damos a "Start TAILS". Una vez en el Escritorio, en la ventana de Tor elegimos "Connect Tor automatically" y le damos a Connect. Cerramos la ventana.  
 
   - Para crear el almacenamiento persistente, nos vamos al menú "Applications/Tails/Configure persistent volume", e introducimos la contraseña "Pendrive 2 ONLINE". En el siguiente menú, marcamos las opciones "Personal Data", "Welcome Screen", "Network Connections", "Bitcoin Client" y "Dotfiles". Reiniciamos.  
 
