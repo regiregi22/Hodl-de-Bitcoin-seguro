@@ -145,7 +145,8 @@ Si asumimos el riesgo de que alguien pueda conocer nuestros fondos (pero no move
   - Puesto que el pendrive OFFLINE no puede conectarse a Internet, lo actualizaremos conectándolo al PC tras haber arrancado con el pendrive ONLINE, una vez ha sido actualizado de antemano. Seguiremos **[el punto 5/5 de esta guía](https://tails.boum.org/upgrade/tails/index.es.html)**, desde el menú inicio Applications / Tails / Tails Installer, seleccionamos el pendrive insertado OFFLINE y le damos a Upgrade.  
 
 ### 6.2.- Actualizar Electrum
-  - Arrancando con el pendrive ONLINE, nos descargamos la última versión Appimage para Linus desde **[su página de descarga](https://electrum.org/#download)** y la copiamos en nuestra carpeta personal persistente. Hacemos click derecho / Propiedades sobre el archivo, y en la pestaña permisos, le damos permisos de ejecución. A partir de ahora, ejecutaremos este archivo de Electrum en lugar de versión del menú inicio. Copiamos el fichero mediante un tercer pendrive para llevárnoslo al PC offline.  
+  - Arrancando con el pendrive ONLINE, nos descargamos la última versión AppImage para Linux desde **[su página de descarga](https://electrum.org/#download)**, y lo descargamos en la propia carpeta que nos sugierte TOR (si elegimos cualquier otra, nos dará error de permisos). A continuación, lo copiamos en nuestra carpeta personal persistente. Por seguridad, TAILS no permite a TOR acceder a otras carpetas, por lo que debemos hacer este paso intermedio.
+  -  Hacemos click derecho / Propiedades sobre el archivo, y en la pestaña permisos, le damos permisos de ejecución. A partir de ahora, ejecutaremos este archivo de Electrum en lugar de versión del menú inicio. Copiamos el fichero mediante un tercer pendrive para llevárnoslo al PC offline.  
 
   - Arrancando con el pendrive OFFLINE, copiamos el fichero a la carpeta persistente y le damos permisos de ejecución como hicimos en el paso anterior.  
 
